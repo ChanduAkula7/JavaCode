@@ -7,8 +7,8 @@ public class Conversion {
 
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            if (Character.toLowerCase(c)) {   
-                c = Character.isUpperCase(c);
+            if (Character.isLowerCase(c)) {   
+                c = Character.toUpperCase(c);
             }
             charsArray[index++] = c;
         }
