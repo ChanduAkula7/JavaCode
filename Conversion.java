@@ -1,22 +1,22 @@
 public class Conversion {
 
- public static String convertToLower(String input) {
+ public static String convertToUpperCase(String input) {
  
-        char[] chars = new char[input.length()];
+        char[] charsArray= new char[input.length()];
         int index = 0;
 
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            if (Character.isUpperCase(c)) {
-                c = Character.toLowerCase(c);
+            if (Character.toLowerCase(c)) {   
+                c = Character.isUpperCase(c);
             }
-            chars[index++] = c;
+            charsArray[index++] = c;
         }
 
         return new String(chars, 0, index);
     }
     public static void main(String[] args) {
-        String input = "UnitTesting";
+        String input = "UnItTeStIng";
         String output= convertToLower(inputString);
         System.out.println("Input String: " + input);
         System.out.println("Output String: " + output);
