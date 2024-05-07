@@ -16,10 +16,10 @@ public class Conversion {
         return new String(chars, 0, index);
     }
     public static void main(String[] args) {
-        String inputString = "UnitTesting";
+        String input = "UnitTesting";
         String output= convertToLower(inputString);
-        System.out.println("Input String: " + inputString);
-        System.out.println("Output String: " + outputString);
+        System.out.println("Input String: " + input);
+        System.out.println("Output String: " + output);
     }
 
    
