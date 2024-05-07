@@ -1,4 +1,4 @@
-public class Conversion {
+public class Converion {
 
  public static String convertToUpperCase(String input) {
  
@@ -13,11 +13,11 @@ public class Conversion {
             charsArray[index++] = c;
         }
 
-        return new String(chars, 0, index);
+        return new String(charsArray, 0, index);
     }
     public static void main(String[] args) {
         String input = "UnItTeStIng";
-        String output= convertToLower(inputString);
+        String output= convertToUpperCase(input);
         System.out.println("Input String: " + input);
         System.out.println("Output String: " + output);
     }
